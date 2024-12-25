@@ -45,6 +45,7 @@ RUN apt-get update && \
         xdg-utils
 
 RUN python3 -m pip install --upgrade pip
+RUN apt-get install nano
 
 WORKDIR /app/brainrot
 
