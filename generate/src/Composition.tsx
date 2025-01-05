@@ -336,8 +336,8 @@ export const AudiogramComposition: React.FC<AudiogramCompositionSchemaType> = ({
 									WebkitTextStroke: '2px black',
 								}}
 							>
-								brainrotjs
-								<br></br>.com 🧠
+								SKIBDI 
+								<br></br>ENGINEER
 							</div>
 							<div
 								style={{
@@ -358,7 +358,7 @@ export const AudiogramComposition: React.FC<AudiogramCompositionSchemaType> = ({
 							</div>
 						</div>
 					</div>
-				</Sequence>
+				{/* </Sequence>
 				<Sequence from={durationInFrames - 3 * fps}>
 					<OffthreadVideo
 						startFrom={20}
@@ -366,7 +366,7 @@ export const AudiogramComposition: React.FC<AudiogramCompositionSchemaType> = ({
 						className={`absolute -left-[1px] -top-[1px] h-full w-[101%] object-cover z-50 `}
 						src={'https://images.smart.wtf/brainrot.mp4'}
 					/>
-				</Sequence>
+				</Sequence> */}
 			</AbsoluteFill>
 		</div>
 	);

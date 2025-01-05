@@ -25,99 +25,37 @@ async function cleanupResources() {
 
 const agents = [
     'BARACK_OBAMA',
-    'BEN_SHAPIRO',
     'JORDAN_PETERSON',
     'JOE_ROGAN',
     'DONALD_TRUMP',
-    'MARK_ZUCKERBERG',
-    'JOE_BIDEN',
-    'LIL_YACHTY',
-    'RICK_SANCHEZ',
-    '50_CENT',
     'ALEX_JONES',
-    'ANDERSON_COOPER',
     'ANDREW_TATE',
-    'ANDREW_YANG',
-    'ANGELA_MERKEL',
     'ANNA_KENDRICK',
-    'ANTHONY_FAUCI',
-    'ANTONIO_BANDERAS',
-    'AOC',
     'ARIANA_GRANDE',
-    'ARNOLD_SCHWARZENEGGER',
-    'BILL_CLINTON',
-    'BILL_GATES',
-    'BILL_OREILLY',
     'BILLIE_EILISH',
     'CARDI_B',
-    'CONOR_MCGREGOR',
-    'DR_DRE',
-    'DR_PHIL',
-    'DRAKE',
     'DWAYNE_JOHNSON',
     'ELON_MUSK',
     'EMMA_WATSON',
-    'GRETA_THUNBERG',
-    'GRIMES',
-    'HILLARY_CLINTON',
-    'JAY_Z',
-    'JEFF_BEZOS',
-    'JERRY_SEINFELD',
     'KANYE_WEST',
-    'KEVIN_HART',
-    'LEX_FRIDMAN',
     'MORGAN_FREEMAN',
     'TAYLOR_SWIFT',
-    'TUCKER_CARLSON',
-    'WILL_SMITH',
-    'ANGIE',
-    'BEN_AFFLECK',
-    'BERNIE_SANDERS',
     'BEYONCE',
-    'CASEY_AFFLECK',
-    'CHARLAMAGNE',
     'DARTH_VADER',
     'DEMI_LOVATO',
-    'DJ_KHALED',
-    'ELIZABETH_HOLMES',
-    'ELLEN_DEGENERES',
-    'GILBERT_GOTTFRIED',
-    'JASON_ALEXANDER',
-    'JIM_CRAMER',
     'JOHN_CENA',
-    'JUSTIN_BIEBER',
-    'JUSTIN_TRUDEAU',
-    'KAMALA_HARRIS',
-    'KARDASHIAN',
-    'KERMIT',
-    'LIL_WAYNE',
-    'MARTIN_SHKRELI',
-    'MATT_DAMON',
-    'MATTHEW_MCCONAUGHEY',
     'MIKE_TYSON',
-    'PATRICK_STEWART',
-    'PAUL_MCCARTNEY',
     'POKIMANE',
-    'PRINCE_HARRY',
-    'RACHEL_MADDOW',
-    'ROBERT_DOWNEY_JR',
-    'RON_DESANTIS',
-    'SAM_ALTMAN',
     'SAMUEL_JACKSON',
-    'SBF',
     'SCARLETT_JOHANSSON',
-    'SEAN_HANNITY',
     'SNOOP_DOGG',
     'STEPHEN_HAWKING',
-    'TUPAC',
-    'WARREN_BUFFETT',
-    'WILLIAM'
 ];
 
 const local = true;
 
 async function main() {
-    const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+    //const randomTopic = topics[Math.floor(Math.random() * topics.length)];
     let agentAIndex = Math.floor(Math.random() * agents.length);
     let agentBIndex;
 
@@ -130,17 +68,14 @@ async function main() {
 	const agentA = agents[0];
     const agentB = agents[1];
 
-    const backgroundMusic = `BGM_MUSIC-0${Math.floor(Math.random() * 10) + 1}`;
-
     // CHANGE THIS VALUE FOR A CUSTOM VIDEO TOPIC
     const videoTopic =
         'Barack Obama is explaining flexures in compliant mechanisms to Ben Shapiro with formulaes';
-    const aiGeneratedImages = false;
+    const aiGeneratedImages = true;
     const fps = 20;
     const duration = 0.5; // minute
-    // MINECRAFT or TRUCK or GTA
-    const background = 'BACKGROUND';
-    const music = backgroundMusic;
+    const background = `BACKGROUND-${Math.floor(Math.random() * 100) + 1}`;
+    const music = `BGM_MUSIC-0${Math.floor(Math.random() * 10)}`;
     const cleanSrt = true;
 
     await transcribeFunction(

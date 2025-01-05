@@ -28,7 +28,7 @@ async function cleanSrt(transcript, srt, i) {
 		messages: [
 			{
 				role: 'system',
-				content: `The first item I will give you is the correct text, and the next will be the SRT generated from this text which is not totally accurate. Sometimes the srt files just doesn't have words so if this is the case add the missing words to the SRT file which are present in the transcript. Based on the accurate transcript, and the possibly inaccurate SRT file, return the SRT text corrected for inaccurate spelling and such. Make sure you keep the format and the times the same.
+				content: `The first item I will provide is the accurate transcript text, followed by the SRT file text that may contain inaccuracies or missing words. Your task is to compare the accurate transcript with the SRT file and make corrections to the SRT file, ensuring it matches the transcript.'	
                             
                             transcript: 
                             ${transcript}
@@ -37,7 +37,7 @@ async function cleanSrt(transcript, srt, i) {
                             ${srt}`,
 			},
 		],
-		model: 'gpt-4-turbo',
+		model: 'gpt-4-turbo-2024-04-09',
 	});
 
 	const content = completion.choices[0].message.content;

@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'ProximaNovaBlack';
-	src: url('../public/ProximaNovaBlack.ttf') format('truetype');
+	font-family: 'KOMIKAX_';
+	src: url('../public/KOMIKAX_.ttf') format('truetype');
 }
 
 :root {
-	--remotion-font: 'ProximaNovaBlack';
+	--remotion-font: 'KOMIKAX_';
 	--base-size: 48px;
 }
 

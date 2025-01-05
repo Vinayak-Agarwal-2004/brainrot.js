@@ -67,7 +67,92 @@ export const RemotionRoot: React.FC = () => {
 							color: '#0000ff',
 							image: 'ANDREW_TATE.png',
 						},
+						ALEX_JONES: {
+							color: '#ff4500',
+							image: 'ALEX_JONES.png',
+						},
+						ANNA_KENDRICK: {
+							color: '#ff69b4',
+							image: 'ANNA_KENDRICK.png',
+						},
+						ARIANA_GRANDE: {
+							color: '#ffb6c1',
+							image: 'ARIANA_GRANDE.png',
+						},
+						BILLIE_EILISH: {
+							color: '#32cd32',
+							image: 'BILLIE_EILISH.png',
+						},
+						CARDI_B: {
+							color: '#ffa500',
+							image: 'CARDI_B.png',
+						},
+						DWAYNE_JOHNSON: {
+							color: '#8b4513',
+							image: 'DWAYNE_JOHNSON.png',
+						},
+						ELON_MUSK: {
+							color: '#708090',
+							image: 'ELON_MUSK.png',
+						},
+						EMMA_WATSON: {
+							color: '#f5deb3',
+							image: 'EMMA_WATSON.png',
+						},
+						KANYE_WEST: {
+							color: '#8b0000',
+							image: 'KANYE_WEST.png',
+						},
+						MORGAN_FREEMAN: {
+							color: '#556b2f',
+							image: 'MORGAN_FREEMAN.png',
+						},
+						TAYLOR_SWIFT: {
+							color: '#ff69b4',
+							image: 'TAYLOR_SWIFT.png',
+						},
+						BEYONCE: {
+							color: '#ffd700',
+							image: 'BEYONCE.png',
+						},
+						DARTH_VADER: {
+							color: '#000000',
+							image: 'DARTH_VADER.png',
+						},
+						DEMI_LOVATO: {
+							color: '#4682b4',
+							image: 'DEMI_LOVATO.png',
+						},
+						JOHN_CENA: {
+							color: '#00ff00',
+							image: 'JOHN_CENA.png',
+						},
+						MIKE_TYSON: {
+							color: '#ff6347',
+							image: 'MIKE_TYSON.png',
+						},
+						POKIMANE: {
+							color: '#ff69b4',
+							image: 'POKIMANE.png',
+						},
+						SAMUEL_JACKSON: {
+							color: '#4b0082',
+							image: 'SAMUEL_JACKSON.png',
+						},
+						SCARLETT_JOHANSSON: {
+							color: '#ff1493',
+							image: 'SCARLETT_JOHANSSON.png',
+						},
+						SNOOP_DOGG: {
+							color: '#32cd32',
+							image: 'SNOOP_DOGG.png',
+						},
+						STEPHEN_HAWKING: {
+							color: '#00008b',
+							image: 'STEPHEN_HAWKING.png',
+						},
 					},
+					
 					subtitlesTextColor: 'rgba(255, 255, 255, 0.93)',
 					subtitlesLinePerPage: 6,
 					subtitlesZoomMeasurerSize: 10,
